@@ -1,0 +1,16 @@
+[package]
+name = "rust_note_visualizer"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+
+[dependencies]
+anyhow = "1.0.104"
+eframe = "0.36.1"
+meval = "0.2.0"
+rodio = "0.22.2"
